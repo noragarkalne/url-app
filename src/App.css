@@ -8,20 +8,36 @@
   background-color: #969ba7;
   border-radius: 25px;
 }
+
 .App-button {
   background-color: #282c34;
-  padding: 20px;
+  padding: 10px;
   top: 10px;
   color: rgb(255, 255, 255);
   border-radius: 25px;
   margin-top: 15px;
+  width: 50%;
 }
 
 body {
   background-color: #282c34;
-  color: rgb(253, 253, 253);
+  color: rgb(39, 35, 59);
   padding: 40px;
   font-family: Arial;
   text-align: center;
   size: 50rem;
+  align-content: 'center';
+}
+
+a {
+  color: white;
+}
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.Input{
+    margin: auto;
+    width: 70%;
 }

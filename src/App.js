@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormGroup, Label, Input, Button, Table } from "reactstrap";
+import { FormGroup, Label, Input, Button } from "reactstrap";
 import axios from "axios";
 import "./app.css";
 
@@ -23,6 +23,11 @@ class App extends Component {
       .put("http://localhost:3030/api/put/url", this.state.newUrlData)
       .then((response) => {
         this.setState({ shorturl: response.data });
+      })
+      .catch((error) => {
+        if (error.response) {
+          this.setState({ shorturl: "Please enter valid link!" })
+        }
       });
   }
   render() {
@@ -33,6 +38,7 @@ class App extends Component {
             Url shortener
           </Label>
           <Input
+            className="Input"
             id="url"
             value={this.state.newUrlData.url}
             onChange={(e) => {
@@ -49,16 +55,12 @@ class App extends Component {
           </Button>
         </FormGroup>
 
-        <Table>
-          <thead>
-            <tr>
-              <th>ShortUrl</th>
-            </tr>
-          </thead>
-          <tbody itemType="url">
-            <a href={this.state.newUrlData.url}>{this.state.shorturl}</a>
-          </tbody>
-        </Table>
+        <p itemType="url">
+          ShortUrl:{" "}
+          <a href={this.state.newUrlData.url} target="blank">
+            {this.state.shorturl}
+          </a>
+        </p>
       </div>
     );
   }
