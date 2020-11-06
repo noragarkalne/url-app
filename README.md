@@ -21,6 +21,8 @@ Open project directory via Visual Studio Code and in terminal run
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+It should look like this ![](shortener.gif)
+
 🚧 This project part is only frontend! For full functionality, please install backend part from here https://github.com/norak22/UrlShortener
 
 
