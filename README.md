@@ -1,6 +1,6 @@
 # Hello, this is frontend part of Url Shortener application!
 
-##Here is a little guide to set up and run application successfully on web browser :)
+## Here is a little guide to set up and run application successfully on web browser :)
 Following guide is adapted to Windows operating system.
 
 If you have not, please install **Visual studio code** (https://code.visualstudio.com) and **Node.js** (https://nodejs.org/en) on your computer.
