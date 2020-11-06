@@ -1,6 +1,6 @@
 # Hello, this is frontend part of Url Shortener application!
 
-## _ Here is a little guide to set up and run application successfully on web browser :) _
+## Here is a little guide to set up and run application successfully on web browser :) 
 Following guide is adapted to Windows operating system.
 
 If you have not, please install **Visual studio code** (https://code.visualstudio.com) and **Node.js** (https://nodejs.org/en) on your computer.
@@ -21,6 +21,6 @@ Open project directory via Visual Studio Code and in terminal run
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-🚧 _ This project part is only frontend! For full functionality, please install backend part from here https://github.com/norak22/UrlShortener _
+🚧 This project part is only frontend! For full functionality, please install backend part from here https://github.com/norak22/UrlShortener
 
 
