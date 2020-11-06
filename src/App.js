@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FormGroup, Label, Input, Button } from "reactstrap";
 import axios from "axios";
-import "./app.css";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -26,7 +26,7 @@ class App extends Component {
       })
       .catch((error) => {
         if (error.response) {
-          this.setState({ shorturl: "Please enter valid link!" })
+          this.setState({ shorturl: "Please enter valid link!" });
         }
       });
   }
